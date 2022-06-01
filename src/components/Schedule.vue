@@ -42,7 +42,7 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-    .What {
+    .Schedule {
         flex-direction: column;
     }
 }

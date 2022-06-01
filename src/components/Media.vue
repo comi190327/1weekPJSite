@@ -95,8 +95,24 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-    .What {
+    .Media {
         flex-direction: column;
+    }
+
+    .web-icon {
+        color: white;
+    }
+
+    .youtube {
+        background-color: #cd201f;
+    }
+
+    .twitter {
+        background-color: #55acee;
+    }
+
+    .github {
+        background-color: #0e0c0d;
     }
 }
 </style>

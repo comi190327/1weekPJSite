@@ -5,10 +5,12 @@ import HelloWorld from './components/HelloWorld.vue'
 import What from './components/What.vue'
 import Schedule from './components/Schedule.vue';
 import Media from './components/Media.vue'
+import List from './components/List.vue'
 </script>
 
 <template>
   <What />
+  <List />
   <Schedule />
   <Media />
 </template>
