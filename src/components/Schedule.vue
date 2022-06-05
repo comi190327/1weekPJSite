@@ -1,5 +1,5 @@
 <template>
-    <div class="Schedule">
+    <div class="Schedule" id="Schedule">
         <h1 class="title"><img class=icon :src="icon" />Streeming Schedule</h1>
         <p>
             <ul>

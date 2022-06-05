@@ -13,10 +13,10 @@ const scrollToMyEl = () => {
 
 <template>
   <div>
-    <a href="#" class="nav-button" @click="clickSmoothScroll('#What')">What</a>
-    <a href="#" class="nav-button" @click="clickSmoothScroll('#List')">List</a>
-    <a href="#" class="nav-button" @click="clickSmoothScroll('#Schedule')">Schedule</a>
-    <a href="#" class="nav-button" @click="clickSmoothScroll('#Media')">Media</a>
+    <a href="#What" class="nav-button" v-smooth-scroll>What</a>
+    <a href="#List" class="nav-button" v-smooth-scroll>List</a>
+    <a href="#Schedule" class="nav-button" v-smooth-scroll>Schedule</a>
+    <a href="#Media" class="nav-button" v-smooth-scroll>Media</a>
   </div>
 </template>
 
@@ -33,20 +33,27 @@ const scrollToMyEl = () => {
     color: whitesmoke;
   }
 
-  .nav-button:before {
-    position: absolute;
+  
+  .nav-button::before, .nav-button::after {
+    border-bottom: solid 2px whitesmoke;
+    bottom: 0;
     content: '';
-    width: 100%;
-    height: 1px;
-    top: 100px;
-    left: 0;
-    border-radius: 0.5px;
-    background: whitesmoke;
-    transition: .3s;
+    display: block;
+    position: absolute;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
   }
 
-  .nav-button:hover:before {
-    top: -webkit-calc(100% -3px);
-    top: calc(100% -3px);
+  .nav-button::before{
+    left: 50%;
+  }
+
+  nav-button::after  {
+    right: 50%;
+  }
+
+  .nav-button:hover:after, .nav-button:hover:after {
+    width: 50%;
+
   }
 </style>

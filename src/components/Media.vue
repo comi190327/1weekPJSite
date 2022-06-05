@@ -1,5 +1,5 @@
 <template>
-    <div class="Media">
+    <div class="Media" id="Media">
         <h1 class="title"><img class=icon :src="icon" />Media</h1>
         <p>
             <div class="items">
